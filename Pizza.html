@@ -1,0 +1,43 @@
+
+<html>
+<body>
+	<!--
+				Naam: Quinten Bozuwa
+			 	Opdracht: Pizza Calculator 1.0
+	-->
+
+<script>
+
+const PIZZAPRIJSSMALL 	= 480; <!-- Dit geeft de prijs aan van een small pizza		-->
+const PIZZAPRIJSMEDIUM 	= 580; <!--	Dit geeft de prijs aan van een medium pizza		-->
+const PIZZAPRIJSLARGE 	= 680; <!--		Dit geeft de prijs aan van een large pizza	-->
+
+var naam 		= prompt ("Wat is uw naam ?"); 	<!-- Dit is de naam van de gene die de bestelling plaatst-->
+var Small 	= parseInt(prompt ("Hoeveel small pizza wilt u?"));		<!--Dit geeft aan hoeveel small pizzas besteld zijn-->
+var Medium 	= parseInt(prompt ("Hoeveel medium pizza wilt u?"));	<!--Dit geeft aan hoeveel medium pizzas besteld zijn-->
+var Large 	= parseInt(prompt ("Hoeveel large pizza wilt u?"));		<!--Dit geeft aan hoeveel large pizzas besteld zijn-->
+
+var smallPizzaTotaal 	= (Small * PIZZAPRIJSSMALL) 	/100;					<!--Dit geeft aan hoeveel alle bestelde small pizzas bij elkaar kosten-->
+var mediumPizzaTotaal = (Medium * PIZZAPRIJSMEDIUM) /100;					<!--Dit geeft aan hoeveel alle bestelde medium pizzas bij elkaar kosten-->
+var largePizzaTotaal 	= (Large * PIZZAPRIJSLARGE)	  /100;					<!--Dit geeft aan hoeveel alle bestelde large pizzas bij elkaar kosten-->
+
+var totaalBedrag= (smallPizzaTotaal + mediumPizzaTotaal + largePizzaTotaal).toFixed(2) <!-- Dit geeft aan hoeveel alle bestelde pizzas bij elkaar kosten
+
+document.write(
+"Small pizza besteld: " , Small ,"<br>", 								<!--Dit zorgt ervoor dat je kan zien hoeveel small pizzas kan zien op de website-->
+"Medium Pizza besteld: " , Medium , "<br>",							<!--Dit zorgt ervoor dat je kan zien hoeveel medium pizzas kan zien op de website-->
+"Large pizza besteld: " , Large, "<br>","<br>","<br>",	<!--Dit zorgt ervoor dat je kan zien hoeveel large pizzas kan zien op de website-->
+
+"Small pizza " 	, "€" , smallPizzaTotaal 	, "<br>",										<!--Dit zorgt er voor dat je kan zien hoeveel je voor small pizzas moet betalen op de website-->
+"Medium Pizza " , "€" , mediumPizzaTotaal , "<br>",										<!--Dit zorgt er voor dat je kan zien hoeveel je voor medium pizzas moet betalen op de website-->
+"Large pizza " 	, "€" , largePizzaTotaal 	, "<br>","<br>","<br>",			<!--Dit zorgt er voor dat je kan zien hoeveel je voor large pizzas moet betalen op de website-->
+
+"Totaal" , " €", totaalBedrag <!-- Dit zorgt ervoor dat je kan zien hoeveel je moet betalen op de website-->
+)
+
+
+
+</script>
+
+</body>
+</html>
